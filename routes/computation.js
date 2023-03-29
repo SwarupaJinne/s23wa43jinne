@@ -1,4 +1,5 @@
 const express = require('express');
+var router = express.Router();
 const app = express();
 const port = 3000;
 
@@ -23,3 +24,4 @@ app.get('/computation', (req, res) => {
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 });
+module.exports = router;
