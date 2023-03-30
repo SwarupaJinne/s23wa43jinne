@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
         x=req.query.x;
 
     }
-    let r=Math.atan2(x);
+    let r=Math.atan2(x,x);
     let t=Math.atanh(x);
     let n=Math.cbrt(x);
     
