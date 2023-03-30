@@ -9,11 +9,11 @@ router.get('/', function(req, res, next) {
         x=req.query.x;
 
     }
-    let p=Math.atan2(x);
-    let q=Math.atanh(x);
-    let r=Math.cbrt(x);
+    let r=Math.atan2(x);
+    let t=Math.atanh(x);
+    let n=Math.cbrt(x);
     
-  res.render('computation', { x:x,atan2:p, atanh:q, cbrt:r});
+  res.render('computation', { x:x,atan2:r, atanh:t, cbrt:n});
 });
 
 module.exports = router;
