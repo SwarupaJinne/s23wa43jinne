@@ -1,19 +1,19 @@
 
 var express = require('express');
 var router = express.Router();
-let x=Math.floor(Math.random());
+let value=Math.floor(Math.random());
 let y
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    if(req.query.x!=undefined){
-        x=req.query.x;
+    if(req.query.value!=undefined){
+        value=req.query.value;
 
     }
-    let r=Math.atan2(x,x);
-    let t=Math.atanh(x);
-    let n=Math.cbrt(x);
+    let p=Math.atan2(value,value);
+    let q=Math.atanh(value);
+    let r=Math.cbrt(value);
     
-  res.render('computation', { x:x,atan2:r, atanh:t, cbrt:n});
+  res.render('computation', { value:value,atan2:p, atanh:q, cbrt:r});
 });
 
 module.exports = router;
